@@ -18,5 +18,5 @@ def call() {
 } // call tag end
 
 def blsPipeline() {
-  utilLog.info("This is my awesome pipeline")
+  echo "This is a BLS Pipeline"
 }
