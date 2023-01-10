@@ -1,6 +1,6 @@
 #!/usr/bin/groovy
 
-def into(message){
+def info(message){
   echo "${message}"
 }
 
