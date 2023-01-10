@@ -3,8 +3,11 @@ def call() {
   pipeline {
         stage("Build"){
            step{
+                echo "Starting my pipeline"
                 script {
+                  echo "Entered script tag"
                   blsPipeline()
+                  echo "Finished calling blspipeline"
                 } //script tag end
             } // Steps tag end
          }// stage tag end
