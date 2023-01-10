@@ -1,11 +1,15 @@
 def call() {
   def template="pipeline-bls-jdk8"
   pipeline {
-      stage{
-        script {
-          blsPipeline()
-        } //script tag end
-      } // stage tag end
+     stages{
+        stage("Build){
+           steps{
+                script {
+                  blsPipeline()
+                } //script tag end
+            } // Steps tag end
+         }// stage tag end
+     }//stages tag end
   }//pipeline tag end
 } // call tag end
 
