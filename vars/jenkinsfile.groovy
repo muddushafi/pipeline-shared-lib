@@ -5,11 +5,12 @@ def call() {
       stage{
         script {
           blsPipeline()
-        }
-     }
-  }
-}
+        } //script tag end
+      } // stage tag end
+    }//stages tag end
+  }//pipeline tag end
+} // call tag end
 
 def blsPipeline() {
-  utilLog.inf("This is my awesome pipeline")
+  utilLog.info("This is my awesome pipeline")
 }
