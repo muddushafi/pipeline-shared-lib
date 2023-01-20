@@ -19,6 +19,6 @@ def call() {
 
 def blsPipeline() {
   utilLog.info("This is a BLS Pipeline")
-  def loadconfig = readYaml file:'/src/acceleratedskillip/abc.yaml'
+  def loadconfig = readYaml file:'/com/acceleratedskillup/abc.yaml'
   echo ${loadconfig}
 }
